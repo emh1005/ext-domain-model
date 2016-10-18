@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		491741321DB44DF900E85A9E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491741311DB44DF900E85A9E /* main.swift */; };
+		4917415D1DB5C9C200E85A9E /* ExtDomainModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491741591DB5C9C200E85A9E /* ExtDomainModelTests.swift */; };
+		4917415E1DB5C9C200E85A9E /* JobTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4917415A1DB5C9C200E85A9E /* JobTests.swift */; };
+		4917415F1DB5C9C200E85A9E /* MoneyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4917415B1DB5C9C200E85A9E /* MoneyTests.swift */; };
+		491741601DB5C9C200E85A9E /* PersonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4917415C1DB5C9C200E85A9E /* PersonTests.swift */; };
+		491741611DB5CAB300E85A9E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491741311DB44DF900E85A9E /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +30,23 @@
 /* Begin PBXFileReference section */
 		4917412E1DB44DF900E85A9E /* ExtDomainModel */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ExtDomainModel; sourceTree = BUILT_PRODUCTS_DIR; };
 		491741311DB44DF900E85A9E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		491741511DB5C98900E85A9E /* ExtDomainModelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExtDomainModelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		491741551DB5C98900E85A9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		491741591DB5C9C200E85A9E /* ExtDomainModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtDomainModelTests.swift; sourceTree = "<group>"; };
+		4917415A1DB5C9C200E85A9E /* JobTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobTests.swift; sourceTree = "<group>"; };
+		4917415B1DB5C9C200E85A9E /* MoneyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyTests.swift; sourceTree = "<group>"; };
+		4917415C1DB5C9C200E85A9E /* PersonTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		4917412B1DB44DF900E85A9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4917414E1DB5C98900E85A9E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				491741301DB44DF900E85A9E /* ExtDomainModel */,
+				491741521DB5C98900E85A9E /* ExtDomainModelTests */,
 				4917412F1DB44DF900E85A9E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				4917412E1DB44DF900E85A9E /* ExtDomainModel */,
+				491741511DB5C98900E85A9E /* ExtDomainModelTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +80,18 @@
 				491741311DB44DF900E85A9E /* main.swift */,
 			);
 			path = ExtDomainModel;
+			sourceTree = "<group>";
+		};
+		491741521DB5C98900E85A9E /* ExtDomainModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				491741591DB5C9C200E85A9E /* ExtDomainModelTests.swift */,
+				4917415A1DB5C9C200E85A9E /* JobTests.swift */,
+				4917415B1DB5C9C200E85A9E /* MoneyTests.swift */,
+				4917415C1DB5C9C200E85A9E /* PersonTests.swift */,
+				491741551DB5C98900E85A9E /* Info.plist */,
+			);
+			path = ExtDomainModelTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +114,23 @@
 			productReference = 4917412E1DB44DF900E85A9E /* ExtDomainModel */;
 			productType = "com.apple.product-type.tool";
 		};
+		491741501DB5C98900E85A9E /* ExtDomainModelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 491741561DB5C98900E85A9E /* Build configuration list for PBXNativeTarget "ExtDomainModelTests" */;
+			buildPhases = (
+				4917414D1DB5C98900E85A9E /* Sources */,
+				4917414E1DB5C98900E85A9E /* Frameworks */,
+				4917414F1DB5C98900E85A9E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExtDomainModelTests;
+			productName = ExtDomainModelTests;
+			productReference = 491741511DB5C98900E85A9E /* ExtDomainModelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -95,6 +144,12 @@
 					4917412D1DB44DF900E85A9E = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 5GH4FJ7825;
+						ProvisioningStyle = Automatic;
+					};
+					491741501DB5C98900E85A9E = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 5GH4FJ7825;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -112,9 +167,20 @@
 			projectRoot = "";
 			targets = (
 				4917412D1DB44DF900E85A9E /* ExtDomainModel */,
+				491741501DB5C98900E85A9E /* ExtDomainModelTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4917414F1DB5C98900E85A9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4917412A1DB44DF900E85A9E /* Sources */ = {
@@ -122,6 +188,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				491741321DB44DF900E85A9E /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4917414D1DB5C98900E85A9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4917415D1DB5C9C200E85A9E /* ExtDomainModelTests.swift in Sources */,
+				491741611DB5CAB300E85A9E /* main.swift in Sources */,
+				4917415E1DB5C9C200E85A9E /* JobTests.swift in Sources */,
+				491741601DB5C9C200E85A9E /* PersonTests.swift in Sources */,
+				4917415F1DB5C9C200E85A9E /* MoneyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,6 +312,37 @@
 			};
 			name = Release;
 		};
+		491741571DB5C98900E85A9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 5GH4FJ7825;
+				INFOPLIST_FILE = ExtDomainModelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = emh.ExtDomainModelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		491741581DB5C98900E85A9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 5GH4FJ7825;
+				INFOPLIST_FILE = ExtDomainModelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = emh.ExtDomainModelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -251,6 +360,15 @@
 			buildConfigurations = (
 				491741361DB44DF900E85A9E /* Debug */,
 				491741371DB44DF900E85A9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		491741561DB5C98900E85A9E /* Build configuration list for PBXNativeTarget "ExtDomainModelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				491741571DB5C98900E85A9E /* Debug */,
+				491741581DB5C98900E85A9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
